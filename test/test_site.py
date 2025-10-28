@@ -26,4 +26,4 @@ def test_two_monitors(browser):
     homepage.open()
     homepage.click_monitor()
     time.sleep(2)  #TODO:
-    homepage.chech_product_count(2)
+    homepage.check_product_count(2)
