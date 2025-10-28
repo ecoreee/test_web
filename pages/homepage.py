@@ -16,6 +16,6 @@ class HomePage:
         monitor_link = self.browser.find_element(By.CSS_SELECTOR, '''[onclick="byCat('monitor')"]''')
         monitor_link.click()
 
-    def chech_product_count(self, count):
+    def check_product_count(self, count):
         monitors = self.browser.find_elements(By.CSS_SELECTOR, '.card')
         assert len(monitors) == count
