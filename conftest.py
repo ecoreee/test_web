@@ -6,8 +6,8 @@ import pytest
 def browser():
     options = Options()
     options.add_argument('--headless')
-    browser = webdriver.Chrome(options=options)
-    browser = webdriver.Chrome()
+    browser = webdriver.Firefox(options=options)
+    browser = webdriver.Firefox()
     browser.maximize_window()
     browser.implicitly_wait(3)
     yield browser
