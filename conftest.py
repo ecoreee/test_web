@@ -10,3 +10,4 @@ def browser():
     browser.maximize_window()
     browser.implicitly_wait(3)
     yield browser
+    browser.quit()
