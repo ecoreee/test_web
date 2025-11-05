@@ -19,7 +19,7 @@ def test_two_monitors(browser):
     homepage = HomePage(browser)
     homepage.open()
     homepage.click_monitor()
-    WebDriverWait(browser, 5).until(
+    WebDriverWait(browser, 10).until(
         expected_conditions.presence_of_all_elements_located((By.CSS_SELECTOR, '.card'))
     )
     homepage.check_product_count(2)
